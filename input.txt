@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+__global__ void VecAdd(float A, float B, float C)
+
+int main()
+{
+	int array[4],i;
+	char c = 's';
+	// This is a single line comment
+	for(i=0;i<4;i++)
+		arr[i]=i;
+	arr[3] = -23.35;
+	// This is also a single line comment
+	for(i=0;i<4;i++)
+		printf("%d ",array[i]);
+
+	/* This is
+a multi-line
+comment */
+	VecAdd<<<24, 1024>>>(A, B, C ) ;
+	/* This is also
+a multi-line
+comment */
+	return 0;
+}
